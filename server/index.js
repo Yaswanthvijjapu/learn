@@ -34,7 +34,9 @@ app.post('/signup',async(req,res)=>{
     console.log(err);
    }
 })
-
+app.get('/',(req,res)=>{
+    res.send("Hello");
+})
 app.listen(5000,()=>{
     console.log("server is running")
 }) 
